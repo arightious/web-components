@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,700');
+
+.tabsComponent {
+  position: relative;   
+  min-height: 350px;
+  width: 90%;
+  clear: both;
+  margin: 20px 0;
+}
+
+.tab {
+  float: left;
+}
+
+.tab > label {
+  font-family: 'Oswald';
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  background: #3498DB;
+  padding: 10px;
+  position: relative;
+}
+
+.tab [type=radio] {
+  display: none;   
+}
+
+.content {
+  font-family: 'Oswald';
+  font-weight: 300;
+  font-size: 16px;
+  color: #2C3E50;
+  background: #ECF0F1;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  position: absolute;
+}
+
+[type=radio]:checked ~ label {
+  color: #2C3E50;
+  background: #ECF0F1;
+}
+
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+fieldset {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
