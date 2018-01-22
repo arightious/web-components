@@ -1,0 +1,205 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head> 
+
+<div class="tabsComponent">
+    
+    <!--Sign up tab-->
+     <div class="tab">
+         <input type="radio" id="sign-up" name="tabs" checked>
+         <label for="sign-up">Sign Up</label>
+         
+         <div class="content">
+             <form action="" method="post">
+  
+    <label for="first-name">First Name:</label>
+    <input id="first-name" type="text" name="first-name">
+    
+    <label for="last-name">Last Name:</label>
+    <input id="last-name" type="text" name="last-name">
+    
+    <label for="email-address">email:</label>
+    <input id="email-address" type="email" name="email">
+    
+    <label for="dob">Date of Birth:</label>
+    <input id="dob" type="date" name="dob">
+    
+    <label for="pwd">Password:</label>
+    <input id="pwd" type="password" name="pwd">
+    
+    <label for="conf-pwd">Confirm Password:</label>
+    <input id="conf-pwd" type="password" name="conf-pwd">
+    
+    <input type="submit" value="Submit">
+  </form>
+         </div> 
+     </div>
+      
+    <!--Login tab-->
+     <div class="tab">
+         <input type="radio" id="login" name="tabs">
+         <label for="login">Login</label>
+         
+         <div class="content">
+             <form action="" method="post">
+    
+    <label for="hand">Handedness:</label>
+    <input id="hand" type="range" min="-100" max="100" name="hand">
+    
+    <label for="color">Favorite Color:</label>
+    <input id="color" type="color" name="color">
+    
+    <label for="website">Your Website:</label>
+    <input id="website" type="url" name="website">
+      <input type="submit" value="Submit">
+  </form>
+         </div> 
+     </div>
+    
+    <!--Shipping tab-->
+    <div class="tab">
+         <input type="radio" id="shipping" name="tabs">
+         <label for="shipping">Shipping</label>
+         
+         <div class="content">
+             <form action="" method="post">
+  <fieldset>
+    <legend>Shipping Address<legend>
+      
+    <label for="first-name">First Name:</label>
+    <input id="first-name" type="text" name="first-name">
+    
+    <label for="last-name">Last Name:</label>
+    <input id="last-name" type="text" name="last-name">
+    
+    <label for="address">Address:</label>
+    <input id="address" type="text" name="address">
+    
+    <label for="city">City:</label>
+    <input id="city" type="text" name="city">
+    
+    <label for="Country">Country</label>
+    <input id="Country" type="country" name="Country">
+    
+    <input type="submit" value="Submit">
+      </fieldset>
+      
+      <input type="checkbox" name="sameAddr" value="small" >
+        <label for="sameAddr">My packages and my bills go to the same address.</label>
+      
+      <fieldset>
+    <legend>Billing Address<legend>
+      
+    <label for="first-name">First Name:</label>
+    <input id="first-name" type="text" name="first-name">
+    
+    <label for="last-name">Last Name:</label>
+    <input id="last-name" type="text" name="last-name">
+    
+    <label for="address">Address:</label>
+    <input id="address" type="text" name="address">
+    
+    <label for="city">City:</label>
+    <input id="city" type="text" name="city">
+    
+    <label for="Country">Country</label>
+    <input id="Country" type="country" name="Country">
+    
+    <input type="submit" value="Submit">
+      </fieldset>
+      </form>
+     </div>
+    </div>
+    
+    <!--Credit card tab-->
+    <div class="tab">
+         <input type="radio" id="credit-card" name="tabs">
+         <label for="credit-card">Credit Card</label>
+         
+         <div class="content">
+             <form action="" method="post">
+  
+    <label for="full-name">Full Name:</label>
+    <input id="full-name" type="text" name="full-name">
+    
+    <label for="card-num">Card Number:</label>
+    <input id="card-num" type="number" name="card-num" minlength=16 maxlength=19>
+    
+    <label for="csv">CSV:</label>
+    <input id="csv" type="number" name="csv" minlength=3 maxlength=4>
+    
+    <label for="exp-mo">Exp Month:</label>
+    <select id="exp-mo" name="exp-mo">
+       <option value="Jan">Jan</option>
+    <option value="Feb">Feb</option>
+    <option value="Mar">Mar</option>
+    <option value="Apr">Apr</option>
+      <option value="May">May</option>
+      <option value="Jun">Jun</option>
+      <option value="Jul">Jul</option>
+      <option value="Aug">Aug</option>
+      <option value="Sep">Sep</option>
+      <option value="Oct">Oct</option>
+      <option value="Nov">Nov</option>
+      <option value="Dec">Dec</option>
+      
+               </select>
+    
+    <label for="exp-yr">Exp Year:</label>
+    <select id="exp-yr" name="exp-yr">
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+      <option value="2026">2026</option>
+      <option value="2027">2027</option>
+      <option value="2028">2028</option>
+      <option value="2029">2029</option>
+      <option value="2030">2030</option>
+      <option value="2031">2031</option>
+      </select>
+    
+    <input type="submit" value="Submit">
+  </form>
+         </div> 
+     </div>
+    
+    <!--Scheduling tab-->
+    <div class="tab">
+         <input type="radio" id="schedule" name="tabs">
+         <label for="schedule">Scheduling</label>
+         
+         <div class="content">
+             <form action="" method="post">
+  
+    <label for="schDate">Date:</label>
+    <input id="schDate" type="date" name="schDate">
+    
+    <label for="schTime">Time:</label>
+    <input id="schTime" type="time" name="schTime">
+    
+    <label for="schTimeZone">Time Zone:</label>
+    <input id="schTimeZone" type="text" name="schTimeZone">
+    
+    <label for="message">Message:</label>
+    <textarea id="message" rows="5" cols="25" name="message">
+  Type your message here...
+  </textarea>
+    
+    <label for="phoneNumber">Phone Number:</label>
+    <input id="phoneNumber" type="number" name="phoneNumber">
+    
+    <label for="email">Email Address:</label>
+    <input id="email" type="email" name="email">
+    
+    <input type="submit" value="Submit">
+  </form>
+         </div> 
+     </div>
+    
+    </div>
